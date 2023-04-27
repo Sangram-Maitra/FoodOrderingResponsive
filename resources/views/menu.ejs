@@ -1,0 +1,22 @@
+<%- include("header") -%> 
+<%- include("navbarmenu") -%> 
+<div style="padding-top: 20rem;">
+<% if(SearchFailure.length>0){ %>
+    <div class="alert alert-danger"><%=SearchFailure%></div>
+<% } %>
+    <div style="padding-left:10rem ; " class="row">
+    <% foods.forEach(function(food){ %>
+        <!-- <div class="col-3"> -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src=<%=food.img %> alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title"><%=food.name %></h3>
+                    <h3><%=food.price %></h3>
+                    <button data-food="<%=JSON.stringify(food) %>" class="add-to-cart btn btn-primary">Add+</button>
+                </div>
+            </div>
+        <!-- </div> -->
+   <% }) %>
+</div>
+</div>
+<%- include("footer") -%> 

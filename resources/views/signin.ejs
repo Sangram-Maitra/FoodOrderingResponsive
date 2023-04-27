@@ -1,0 +1,43 @@
+<%- include("header") -%> 
+<form action="/signIn" method="post">
+    <section class="mainBody" style="margin:auto; padding-top: 5rem;">
+    <div class="box-form" style="margin:auto;">
+        <div class="left">
+            <div class="overlay">
+            <h1>YAMMiTO</h1>
+            <h2>Don't make your tummy wait 
+                order quickly :P</h2>
+            </div>
+        </div>
+            <div class="right">
+            <h5  style="padding-bottom: 10rem;  padding-top: 2rem;">Login</h5>
+            <p>Don't have an account? <a style="color: blue;" href="/signUp">Create Your Account</a> it takes less than a minute</p>
+            <% if(serverError.length>0){ %>
+                <span class="text-red-500 text-sm"><%=serverError%></span>
+            <% } %>
+            <div class="inputs">
+                <input type="number" name="Phone" placeholder="phonenumber" required="required">
+                <br>
+                <input type="password" name="pass" placeholder="password" required="required">
+            </div>
+                <br><br>
+            <div class="remember-me--forget-password">
+                    <!-- Angular -->
+        <label>
+            <input type="checkbox" name="item"/>
+            <span class="text-checkbox">Remember me</span>
+        </label>
+                <p>forget password?</p>
+            </div>
+                <br>
+                
+                    <button>Login</button>
+                
+        </div>
+        
+    </div>
+    </section>
+</form>
+<!-- partial -->
+
+<%- include("footer") -%> 

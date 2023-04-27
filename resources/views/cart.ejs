@@ -1,0 +1,47 @@
+<%- include("header") -%> 
+<%- include("navbarmenu") -%>
+
+<% if(session.cart) {%>
+<div class="food-list" style="padding:10rem">
+    <div>
+        <span style="padding-right:36rem">Name</span>
+        <span style="padding-right:30rem">Quantity</span>
+        <span >Price</span>
+    </div> 
+    <hr>
+    <% for(let food of Object.values(session.cart.items)) {%>
+    <div class="flex items-center my-8">
+        <img class="w-24" src="<%=food.item.img%>" alt="">
+        <div class="flex-1 ml-4">
+            <h1><%=food.item.name %></h1>
+            <!-- <span><%=food.item.size %></span> -->
+        </div>
+        <span class="flex-1"><%=food.qty %> Pcs</span>
+        <span class="font-bold text-lg"><%=food.qty * food.item.price %></span>
+    </div>
+    <% } %>
+    <hr>
+    <div class="text-right py-4">
+        <div>
+            <span class="text-lg font-bold">Total Amount:</span>
+            <span class="amount text-2xl font-bold ml-2"><%= session.cart.totalPrice %></span>
+        </div>
+        <form action="/order" method="post">
+            <button type="submit" class="add-to-cart btn btn-primary">Payment</button>
+        </form>
+    </div>  
+</div>
+<% } else { %>
+    <div class="food-list" style="padding:10rem">
+        <div>
+            <span style="padding-right:36rem">Name</span>
+            <span style="padding-right:30rem">Quantity</span>
+            <span >Price</span>
+        </div> 
+        <hr>
+        <h1 class="text-6xl font-bold" style="color: #ff5959; margin: auto; padding: 5rem;">NO ORDERED YET DON'T WAIT, HURRY UP AND ORDER 🤭</h1>
+    </div>
+<% } %>
+
+    
+<%- include("footer") -%> 

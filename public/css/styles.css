@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300, 400');
+
+
+body{
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    /* background: url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat fixed; */
+    /* background: url("foodimage3.jpg") no-repeat fixed; */
+    /* background: url("FoodDeliveryBackground.png") no-repeat fixed !important; */
+    /* background:url("foodImage.png"); */
+    background-size: cover;
+    
+}
+
+a:hover{
+    text-decoration-line: none;
+}
+
+
+section{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* form{
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    padding: 10px 30px;
+} */
+
+.fa-eye{
+    margin-top: -26px;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+/* .form-control::-webkit-input-placeholder{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #a7a7a8;
+} */
+/* .form-control{
+    border-radius: 0;
+    border: 1px solid #d6d6d6;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    background: rgba(255,255,255,0);
+
+} */
+/* .form-control:focus{
+    color: #000000;
+    border: 1px solid #000000;
+    background: rgba(255,255,255,0);
+}
+.form-group{
+    color: #000000;
+    font-size: 14px;
+}
+#account{
+    font-size: 14px;
+}
+#first, #third, #first2, #third2{
+    border-bottom: 1px solid #d6d6d6;
+    bottom: 10px;
+}
+#or, #or2{
+    margin-bottom: 0.5rem;
+}
+#second, #second2{
+    padding: 0 7px;
+}
+.next-step:hover{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3px;
+}
+.fa-facebook-official{
+    color: #000000;
+}
+.fa-facebook-official:hover{
+    color: #3B5998;
+}
+.eyes{
+    position: absolute;
+    padding-left: 120px;
+} */
+/* .form-control, .btn, p, #or div, #or2 div, .eyes{
+    -moz-animation: slideIn 0.7s ease-out;
+    -webkit-animation: slideIn 0.7s ease-out;
+    animation: slideIn 0.7s ease-out;
+} */
+
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        margin-left: -35px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes slideIn {
+    0% {
+        opacity: 0;
+        margin-left: -35px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+
+/* 
+.tabs{
+    position: relative;
+    display: block;
+}
+.tabs > div {
+    padding-top: 5rem;
+}
+.tabs ul{
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+.tabs ul li{
+    cursor:pointer;
+    padding: 8px 0;
+    width: 50%;
+    display: inline-block;
+    float:left;
+    color: #a7a7a8;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: 2px solid #d6d6d6;
+} */
+/* .tabs ul li.active, .tabs ul li.active:hover{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    -webkit-transition: 0.7s ease-in;
+    transition: 0.7s ease-in;
+}
+.tabs ul li:hover{
+    color: #000000;
+} */
+/* 
+@media screen and (max-width: 575px){
+    #account{
+        font-size: 12px;
+    }
+    .eyes{
+        padding-left: 80px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px){
+    .eyes{
+        padding-left: 105px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #account{
+        font-size: 12px;
+    }
+    .eyes{
+        padding-left: 90px;
+    }
+} */
+
+
+/* adding Sangram's custom made css below <3 */
+.lab{
+  font-size: x-large;
+}
+
+label{
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tex{
+  font-size: larger!important;
+  font-family: 'Quicksand', sans-serif!important;
+  text-align: left;
+}
+
+.c-home{
+    font-size: xx-large!important;
+    padding-bottom: 0!important;
+}
+
+.c-par{
+  margin: auto;
+  font-size: xx-large;
+}
+
+.c-par2{
+    font-size: large!important;
+}
+
+.c-foot{
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.last{
+  padding-left: 100rem;
+}
+
+.c-Div{
+  padding-bottom: 1rem;
+}
+
+p{
+  text-align: left;
+}
+
+/* form{
+  margin:3rem 25% 2rem 25% ;
+  border-radius: 1rem!important;
+} */
+
+.c-err{
+    font-size: x-large!important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+}
+
+.text{
+  text-align: center;
+}
+
+.btn-xl {
+  padding: 10px 20px !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+}
+
+.btn{
+    border-radius: 3!important;
+    background-color: #fd6d41 !important;
+    border-color: white!important;
+    color: #ffffff!important;
+    font-family: 'Quicksand', sans-serif !important;
+    margin: 1rem 0 1.2rem 0!important;
+
+}
+.btn:hover{
+    background: white!important;
+    color: black !important;
+    box-shadow: 5px 5px 1px#fd6d41!important;
+    /* opacity: 0.7; */
+}
+
+footer{
+  margin-left:37rem;
+}
+
+input{
+    
+    border: none;
+    background-color: transparent;
+}
+
+/* .c-form{
+    margin:0;
+} */
+
+.animation{
+    -moz-animation: slideIn 0.7s ease-out;
+    -webkit-animation: slideIn 0.7s ease-out;
+    animation: slideIn 0.7s ease-out;
+}
+
+.animationOpp{
+    -moz-animation: slideIn 0.7s backwards;
+    -webkit-animation: slideIn 0.7s backwards;
+    animation: slideIn 0.7s backwards;
+}
+
+.c-greet{
+    text-align: center !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color:#ffffff;
+}
+
+/* .btn{
+    background-color: #8064A2 !important;
+} */
+
+
+.nav-item1{
+    padding-left: 50rem;
+    padding-right: 5rem;
+}
+
+.c-nav{
+    font-size: x-large;
+}
+
+.c-navbar{
+    background-color: rgb(233, 70, 10) !important;
+    
+}
+
+.c-navText{
+    color: white!important;
+}
+
+.c-prof{
+    text-align: center !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color:#21264B;
+}
+
+.back_image_set{
+    background: url("FoodDeliveryBackground.png") no-repeat fixed !important;
+    background-size: cover !important;
+};
+

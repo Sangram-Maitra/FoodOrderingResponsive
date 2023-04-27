@@ -1,0 +1,53 @@
+<%- include("header") -%> 
+
+<!--  -->
+<form action="/signingup" method="post">
+  <section class="mainBody" style="padding-top: 5rem;">
+    <div class="box-form" style="margin: auto;" >
+      <div class="right">
+        <h5 style="padding-bottom: 5rem; padding-top: 2rem;">Sign Up</h5>
+        <p>
+          Already have an account?
+          <a style="color: blue" href="/signIn">LogIn </a>No Problemo. . . Make your GF Wait But Not your TUMMY ❤ 
+        </p>
+        <% if(serverError.length>0){ %>
+          <span class="text-red-500 text-sm"><%=serverError%></span>
+        <% } %>
+        <div class="inputs">
+        <input type="text" name="First_Name" class="form-control tex" id="Fname" required="required" placeholder="First Name">
+          <!-- <br/> -->
+          <input type="text" name="Last_Name" class="form-control tex" id="Lname" required="required" placeholder="Last name">
+          <!-- <br /> -->
+          <input type="text" name="add" class="form-control tex" id="Add" required="required" placeholder="Address">
+          <!-- <br/> -->
+          <input type="number" name="Phone" class="form-control tex" id="phNo" required="required" placeholder="PhoneNumber">
+          <!-- <br /> -->
+          <input type="password" name="pass" placeholder="password" />
+        </div>
+
+        <br /><br />
+
+        <div class="remember-me--forget-password">
+          <!-- Angular -->
+          <label>
+            <input type="checkbox" name="item" />
+            <span class="text-checkbox">Remember me</span>
+          </label>
+        </div>
+        <br/>
+
+        <button>SignUp</button>
+      </div>
+      <div class="left">
+        <div class="overlay">
+          <h1>YAMMiTO</h1>
+          <h2>Don't make your tummy wait order quickly :P</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partial -->
+
+  <!--  -->
+</form>
+<%- include("footer") -%>

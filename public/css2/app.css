@@ -1,0 +1,10 @@
+nav li a {
+  transition: all 0.3s ease-in-out;
+}
+nav li a:hover {
+  color: rgb(247, 108, 28);
+}
+
+section.hero {
+  background: rgb(241, 241, 241);
+}
